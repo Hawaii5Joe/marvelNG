@@ -1,0 +1,21 @@
+<!-- search bar for Heros -->
+<nav class="navbar navbar-default navbar-fixed top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">HERO SEARCH</a>
+      </div>
+
+      <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input [(ngModel)]="searchVal" type="text" class="form-control" name="searchvazl" placeholder="Search" id="search_box">
+          </div>
+          <button type="submit" class="btn btn-default" (click)="search()" id="button_info">Submit</button>
+      </form>
+    </div>
+</nav>
